@@ -29,13 +29,12 @@ class SettingsViewController: UIViewController {
     @IBOutlet var greenTextField: UITextField!
     @IBOutlet var blueTextField: UITextField!
     
-    @IBOutlet var doneButton: UIButton!
+ 
     
     
     // MARK: Public Properties
     var delegate: SettingsViewControllerDelegate!
     var currentViewColor: UIColor!
-    let button = UIButton()
     
     
     override func viewDidLoad() {
@@ -71,8 +70,7 @@ class SettingsViewController: UIViewController {
         setColor()
         
         
-        doneButton.setTitle("Done", for: .normal)
-        
+
         setValue(for: redTextField, greenTextField, blueTextField)
         setValue(for: redLabel, greenLabel, blueLabel)
         setValue(for: redSlider, greenSlider, blueSlider)
