@@ -67,14 +67,16 @@ class SettingsViewController: UIViewController {
         blueSlider.tintColor = .blue
         
         mainView.layer.cornerRadius = 15
-        setColor()
         
         
-
+        
+        setValue(for: redSlider, greenSlider, blueSlider)
         setValue(for: redTextField, greenTextField, blueTextField)
         setValue(for: redLabel, greenLabel, blueLabel)
-        setValue(for: redSlider, greenSlider, blueSlider)
+        
         addDoneButtonTo(redTextField, greenTextField, blueTextField)
+        
+        setColor()
         
     }
 
